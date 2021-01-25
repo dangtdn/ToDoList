@@ -124,3 +124,6 @@ window.rejectTask = async (taskName) => {
         console.log(err);
     }
 }
+
+// Chức năng chào 
+alert('Đã sửa');
