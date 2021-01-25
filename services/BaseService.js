@@ -1,44 +1,41 @@
 export class BaseService {
+  constructor() {}
 
-    constructor(){
+  post = (url, data) => {
+    const promise = axios({
+      url: url,
+      method: "POST",
+      data: data,
+    });
 
-    }
+    return promise;
+  };
 
-    post = (url,data) => {
-        const promise = axios ({
-            url: url,
-            method: 'POST',
-            data:data
-        })
+  get = (url) => {
+    const promise = axios({
+      url: url,
+      method: "GET",
+    });
 
-        return promise;
-    } 
+    return promise;
+  };
 
-    get = (url) => {
-        const promise = axios ({
-            url: url,
-            method: 'GET'
-        })
+  put = (url, data) => {
+    const promise = axios({
+      url: url,
+      method: "PUT",
+      data: data,
+    });
 
-        return promise;
-    } 
+    return promise;
+  };
 
-    put = (url,data) => {
-        const promise = axios ({
-            url: url,
-            method: 'PUT',
-            data:data
-        })
+  delete = (url) => {
+    const promise = axios({
+      url: url,
+      method: "DELETE",
+    });
 
-        return promise;
-    } 
-
-    delete = (url) => {
-        const promise = axios ({
-            url: url,
-            method: 'DELETE'
-        })
-
-        return promise;
-    } 
+    return promise;
+  };
 }
