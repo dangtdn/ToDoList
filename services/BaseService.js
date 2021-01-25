@@ -42,8 +42,3 @@ export class BaseService {
         return promise;
     } 
 }
-
-console.log('Hi All');
-console.log('Hi All');
-console.log('Hi All');
-console.log('Hi All');
