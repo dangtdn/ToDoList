@@ -1,43 +1,45 @@
 export class BaseService {
-    constructor(){
+    constructor() {
 
     }
 
-    post = (url,data) => {
-        const promise = axios ({
+    post = (url, data) => {
+        const promise = axios({
             url: url,
             method: 'POST',
-            data:data
+            data: data
         })
 
         return promise;
-    } 
+    }
 
     get = (url) => {
-        const promise = axios ({
+        const promise = axios({
             url: url,
             method: 'GET'
         })
 
         return promise;
-    } 
+    }
 
-    put = (url,data) => {
-        const promise = axios ({
+    put = (url, data) => {
+        const promise = axios({
             url: url,
             method: 'PUT',
-            data:data
+            data: data
         })
 
         return promise;
-    } 
+    }
 
     delete = (url) => {
-        const promise = axios ({
+        const promise = axios({
             url: url,
             method: 'DELETE'
         })
 
         return promise;
-    } 
+    }
 }
+
+console.log('mình là user B');
