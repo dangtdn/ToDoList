@@ -1,43 +1,43 @@
 export class BaseService {
-    constructor(){
+  constructor() {}
 
-    }
+  post = (url, data) => {
+    const promise = axios({
+      url: url,
+      method: "POST",
+      data: data,
+    });
 
-    post = (url,data) => {
-        const promise = axios ({
-            url: url,
-            method: 'POST',
-            data:data
-        })
+    return promise;
+  };
 
-        return promise;
-    } 
+  get = (url) => {
+    const promise = axios({
+      url: url,
+      method: "GET",
+    });
 
-    get = (url) => {
-        const promise = axios ({
-            url: url,
-            method: 'GET'
-        })
+    return promise;
+  };
 
-        return promise;
-    } 
+  put = (url, data) => {
+    const promise = axios({
+      url: url,
+      method: "PUT",
+      data: data,
+    });
 
-    put = (url,data) => {
-        const promise = axios ({
-            url: url,
-            method: 'PUT',
-            data:data
-        })
+    return promise;
+  };
 
-        return promise;
-    } 
+  delete = (url) => {
+    const promise = axios({
+      url: url,
+      method: "DELETE",
+    });
 
-    delete = (url) => {
-        const promise = axios ({
-            url: url,
-            method: 'DELETE'
-        })
-
-        return promise;
-    } 
+    return promise;
+  };
 }
+
+console.log("Mình là User Lê Trung Cương");
