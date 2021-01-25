@@ -43,3 +43,4 @@ export class BaseService {
 }
 
 console.log('mình là user B');
+console.log('xin chào');
